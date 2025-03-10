@@ -8,7 +8,8 @@ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 #STEP-3: DOWNLOAD JAVA11 AND JENKINS
 #amazon-linux-extras install java-openjdk11 -y
 #(yum list java* -y)
-yum install java-17-amazon-corretto.x86_64 -y
+#yum install java-17-amazon-corretto.x86_64 -y
+yum install fontconfig java-17-openjdk
 yum install jenkins -y
 update-alternatives --config java
 
